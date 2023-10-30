@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Venus</title>
+</head>
+<body>
+    <div class="box">
+        <h1 style="color:purple">Bem vindo ao Venus!
+            <h3>Aqui ajudaremos você a escolher um livro com base nas críticas!</h3>
+            <h3>Faça seu cadastro:</h3>
+            <button id="cadastroButton">Cadastro</button>
+            <h3>Faça seu login:</h3>
+            <button id="loginButton">Login</button>
+        </h1>
+    </div>
+
+    <script>
+
+        const cadastroButton = document.getElementById("cadastroButton");
+
+        cadastroButton.addEventListener("click", function()
+       {
+         window.location.href = "cadastro.html";
+       })
+
+       const loginButton = document.getElementById("loginButton");
+      
+       loginButton.addEventListener("click", function()
+       {
+         window.location.href = "login.html";
+       })
+
+    </script>
+
+</body>
+</html>
